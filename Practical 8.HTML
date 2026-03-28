@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+
+    <style>
+        /* Body with gradient */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
+        }
+
+        /* Title */
+        .title {
+            text-align: center;
+            color: rgb(61, 18, 18);
+            margin: 20px 0;
+        }
+
+        /* Gallery grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Card */
+        .card {
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        /* Image */
+        .card img {
+            width: 100%;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        /* Hover Effects */
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 class="title">Cars Gallery</h1>
+
+    <div class="gallery">
+        <div class="card">
+            <img src="https://bimmerlife.com/wp-content/uploads/2020/07/i8procar1-e1594000275177.jpg">
+        </div>
+
+        <div class="card">
+            <img src="https://www.cnet.com/a/img/resize/7a28bae4f0badf646acfa48db30e692436163e16/hub/2019/11/25/0147610c-a997-4917-bbb5-429dab1fca7c/ogi-lambo.jpg?auto=webp&fit=crop&height=675&width=1200">
+        </div>
+
+        <div class="card">
+            <img src="https://caltech-prod.resources.caltech.edu/main/images/Chung_Soon-Jo-Lab-IAC-1590x1.ffc52285.fill-1600x810-c100.jpg">
+        </div>
+
+        <div class="card">
+            <img src="https://cimg0.ibsrv.net/ibimg/hgm/1920x1080-1/100/755/first-bugatti-divo-in-united-states--photo-credit-miller-motorcars_100755916.jpg">
+        </div>
+
+        <div class="card">
+            <img src="https://www.carscoops.com/wp-content/uploads/2018/01/Bugatti-Chiron-Pagani-Huayra-Bitcoin-.jpg">
+        </div>
+
+        <div class="card">
+            <img src="https://www.spinny.com/blog/wp-content/uploads/2025/07/Most-Expensive-Car-in-the-World-Pagani-Huayra-Imola-Roadster-1160x570.webp">
+        </div>
+    </div>
+
+</body>
+</html>
